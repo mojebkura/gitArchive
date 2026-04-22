@@ -1,5 +1,6 @@
 <?php
-require 'Database/connectDB.php';
+require './connectDB.php';
+require './function.php';
 
 try {
     $sql = "SELECT * FROM games";
@@ -19,6 +20,7 @@ try {
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles/style.css.">
     <title>Game Archive</title>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid justify-content-center">
@@ -36,6 +38,9 @@ try {
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="index.php">Главная</a></li>
                     <li class="nav-item"><a class="nav-link" href="ContactInfo.php">Контактная информация</a></li>
+<!--                    <li class="nav-item"><a class="nav-link" href="add.games.php">Добавить игру</a></li>-->
+                    <li class="nav-item"><a class="nav-link" href="view.games.php">Просмотр игр</a></li>
+
                 </ul>
             </div>
         </div>
@@ -59,7 +64,7 @@ try {
             <div class="card-body">
                 <h5 class="card-title">Resident Evil 2(1998)</h5>
                 <p class="card-text"></p>
-                <a href="#" class="btn btn-primary">Узнать больше</a>
+                <a href="#" class="btn btn-primary">Временно закрыто</a>
             </div>
         </div>
     </div>
@@ -69,7 +74,7 @@ try {
             <div class="card-body">
                 <h5 class="card-title">Dead Space</h5>
                 <p class="card-text"></p>
-                <a href="#" class="btn btn-primary">Узнать больше</a>
+                <a href="#" class="btn btn-primary">Временно закрыто </a>
             </div>
         </div>
     </div>
@@ -79,7 +84,7 @@ try {
             <div class="card-body">
                 <h5 class="card-title">METAL GEAR SOLID Δ: SNAKE EATER</h5>
                 <p class="card-text"></p>
-                <a href="#" class="btn btn-primary">Узнать больше</a>
+                <a href="#" class="btn btn-primary">Временно закрыто </a>
             </div>
         </div>
     </div>
@@ -89,7 +94,7 @@ try {
             <div class="card-body">
                 <h5 class="card-title">DEATH STRANDING 2: ON THE BEACH</h5>
                 <p class="card-text"></p>
-                <a href="#" class="btn btn-primary">Узнать больше</a>
+                <a href="#" class="btn btn-primary">Временно закрыто </a>
             </div>
         </div>
     </div>
@@ -99,7 +104,7 @@ try {
             <div class="card-body">
                 <h5 class="card-title">DOOM: The Dark Ages</h5>
                 <p class="card-text"></p>
-                <a href="#" class="btn btn-primary">Узнать больше</a>
+                <a href="#" class="btn btn-primary">Временно закрыто </a>
             </div>
         </div>
     </div>
@@ -109,7 +114,7 @@ try {
             <div class="card-body">
                 <h5 class="card-title">Blasphemous</h5>
                 <p class="card-text"></p>
-                <a href="#" class="btn btn-primary">Узнать больше</a>
+                <a href="#" class="btn btn-primary">Временно закрыто</a>
             </div>
         </div>
     </div>
@@ -117,13 +122,47 @@ try {
         <div class="card" style="width: 18rem;">
             <img src="images/fallout2.jpg" class="card-img-top" alt="Fallout 2">
             <div class="card-body">
-                <h5 class="card-title">Fallout 2: A Post Nuclear Role Playing Game</h5>
+                <h5 class="card-title">Fallout 2</h5>
                 <p class="card-text"></p>
-                <a href="#" class="btn btn-primary">Узнать больше</a>
+                <a href="#" class="btn btn-primary">Временно закрыто </a>
             </div>
         </div>
     </div>
 </div>
-</div>
+<!--<div class="container mt-4">-->
+<!--    <h2 class="text-center mb-4">Краткая информация о играх на сайте</h2>-->
+<!--    <div class="table-responsive">-->
+<!--        <table class="table table-dark table-striped table-bordered table-hover align-middle">-->
+<!--            <thead class="table-secondary">-->
+<!--            <tr>-->
+<!--                <th>ID</th>-->
+<!--                <th>Название игры</th>-->
+<!--                <th>Дата релиза</th>-->
+<!--                <th>Жанр</th>-->
+<!--                <th>Разработчик</th>-->
+<!--                <th>Издатель</th>-->
+<!--            </tr>-->
+<!--            </thead>-->
+<!--            <tbody>-->
+<!--            --><?php //if (count($games) > 0): ?>
+<!--                --><?php //foreach ($games as $game): ?>
+<!--                    <tr>-->
+<!--                        <td>--><?php //= htmlspecialchars($game['id']) ?><!--</td>-->
+<!--                        <td>--><?php //= htmlspecialchars($game['game_name']) ?><!--</td>-->
+<!--                        <td>--><?php //= htmlspecialchars($game['release_date']) ?><!--</td>-->
+<!--                        <td>--><?php //= htmlspecialchars($game['genre_name']) ?><!--</td>-->
+<!--                        <td>--><?php //= htmlspecialchars($game['developer_name'] ?? '—') ?><!--</td>-->
+<!--                        <td>--><?php //= htmlspecialchars($game['publisher_name'] ?? '—') ?><!--</td>-->
+<!--                    </tr>-->
+<!--                --><?php //endforeach; ?>
+<!--            --><?php //else: ?>
+<!--                <tr>-->
+<!--                    <td colspan="6" class="text-center">Нет добавленных игр</td>-->
+<!--                </tr>-->
+<!--            --><?php //endif; ?>
+<!--            </tbody>-->
+<!--        </table>-->
+<!--    </div>-->
+<!--</div>-->
 </body>
 </html>

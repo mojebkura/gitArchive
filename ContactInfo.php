@@ -28,13 +28,16 @@
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item"><a class="nav-link" href="index.php">Главная</a></li>
                 <li class="nav-item"><a class="nav-link" href="ContactInfo.php">Контактная информация</a></li>
+<!--                <li class="nav-item"><a class="nav-link" href="add.games.php">Добавить игру</a></li>-->
+                <li class="nav-item"><a class="nav-link" href="view.games.php">Просмотр игр</a></li>
+                </div>
             </ul>
         </div>
     </div>
 </nav>
      <div>
          <div class="card mb-3">
-             <img src="images/contactinfo.png" class="card-img-top" alt="...">
+             <img src="images/contactinfo.png" class="card-img-top" alt="width="500" height="700">
              <div class="card-body">
                  <h5 class="card-title">Контактная информация для предложения своих идей </h5>
              </div>

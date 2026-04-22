@@ -1,1 +1,86 @@
+body {
+    background-color: #000000;
+    color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
 
+.navbar {
+    background-color:#293133 !important;
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.navbar-brand, .navbar-nav .nav-link {
+    color: #ffffff !important;
+}
+.navbar-nav .nav-link:hover {
+    color: #cccccc !important;
+}
+.text-muted {
+    color: #bbbbbb !important;
+}
+
+
+.search-form {
+    display: flex;
+    gap: 5px;
+    margin-left: 15px;
+}
+.search-form input {
+    background-color: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
+    padding: 5px 12px;
+    color: white;
+}
+.search-form input::placeholder {
+    color: #ccc;
+}
+.search-form button {
+    background-color: #0d6efd;
+    border: none;
+    border-radius: 20px;
+    padding: 5px 15px;
+    color: white;
+    transition: 0.2s;
+}
+.search-form button:hover {
+    background-color: #0b5ed7;
+}
+
+
+.card {
+    background-color: rgba(30, 30, 30, 0.85);
+    backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    transition: transform 0.2s, background-color 0.2s;
+    color: white;
+}
+.card:hover {
+    background-color: rgba(50, 50, 50, 0.9);
+    transform: translateY(-5px);
+}
+.card-title {
+    color: #ffffff;
+    font-weight: 600;
+}
+.card-text {
+    color: #dddddd;
+}
+.btn-primary {
+    background-color: #0d6efd;
+    border: none;
+    border-radius: 20px;
+    padding: 6px 16px;
+    opacity: 0.95;
+}
+.btn-primary:hover {
+    opacity: 1;
+    background-color: #0b5ed7;
+}
+
+.row.g-2 {
+    margin-top: 2rem;
+    padding-bottom: 2rem;
+}
